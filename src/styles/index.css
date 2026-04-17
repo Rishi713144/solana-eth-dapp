@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --font-main: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  
+  --bg-dark: #0f172a; 
+  --bg-darker: #020617; 
+  --bg-card: rgba(255, 255, 255, 0.05);
+  
+  --primary: #d4ff3f; 
+  --primary-glow: rgba(212, 255, 63, 0.15);
+  
+  --text-main: #f8fafc; 
+  --text-dim: #94a3b8; 
+  --text-muted: #64748b; 
+  
+  --border: rgba(255, 255, 255, 0.08);
+  --border-active: rgba(255, 255, 255, 0.2);
+  
+  --radius-orbit: 24px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  
+  --shadow-orbit: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-darker);
+  background: radial-gradient(circle at 50% -20%, #1e293b 0%, var(--bg-darker) 80%);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.glass-orbit {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-orbit);
+}
+
+.btn-orbit {
+  background: var(--primary);
+  color: #000;
+  font-weight: 800;
+  padding: 16px 32px;
+  border-radius: 14px; 
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn-orbit:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 10px 20px -5px var(--primary-glow);
+}
+
+.btn-orbit-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-weight: 700;
+  padding: 16px 32px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.btn-orbit-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.text-gradient {
+  background: linear-gradient(to right, #60a5fa, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
