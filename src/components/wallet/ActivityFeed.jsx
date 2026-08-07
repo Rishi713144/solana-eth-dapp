@@ -42,13 +42,13 @@ export const ActivityFeed = ({ mnemonic }) => {
           </h3>
           <p className="text-dim text-sm mt-1">Recent operations on Solana Devnet</p>
         </div>
-        <span className="orbit-badge bg-white/5 border border-white/10 uppercase tracking-widest text-[10px]">Primary Account</span>
+        <span className="bg-primary/20 text-primary px-2 py-1 rounded font-bold uppercase tracking-widest text-[10px] border border-primary/20">Primary Account</span>
       </div>
 
       <div className="space-y-3">
         {transactions.length > 0 ? (
           transactions.map((tx, i) => (
-            <div key={i} className="wallet-item-orbit group hover:bg-white/5 transition-all">
+            <div key={i} className="p-4 border border-white/5 rounded-xl flex items-center justify-between group hover:bg-white/5 transition-all">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center">
                   <Clock size={16} className="text-dim" />

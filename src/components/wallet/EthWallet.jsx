@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import PropTypes from "prop-types";
 import { mnemonicToSeed } from "bip39";
 import { Wallet, HDNodeWallet } from "ethers";
@@ -30,23 +31,23 @@ export const EthWallet = ({ mnemonic }) => {
     <div className="chain-wallet-section">
       <div className="chain-header">
         <div className="chain-title">
-          <span className="orbit-badge">ETH</span>
+          <span className="bg-primary/20 text-primary text-[10px] px-2 py-1 rounded font-bold uppercase tracking-widest">ETH</span>
           Ethereum
         </div>
-        <button className="btn-orbit py-2 px-4 text-xs" onClick={addWallet}>
+        <Button size="sm" onClick={addWallet}>
           + Create
-        </button>
+        </Button>
       </div>
 
       {addresses.length === 0 && (
         <p className="no-wallets-hint">No Ethereum wallets generated yet.</p>
       )}
 
-      <div className="wallet-list-orbit">
+      <div className="wallet-list">
         {addresses.map((addr, index) => (
-          <div key={index} className="wallet-item-orbit">
+          <div key={index} className="p-4 border border-white/5 rounded-xl flex flex-col gap-3 bg-secondary/20 hover:bg-white/5 transition-all group">
             <div className="text-sm font-bold opacity-40">#{index + 1}</div>
-            <div className="address-orbit">{addr.slice(0, 12)}...{addr.slice(-10)}</div>
+            <div className="address">{addr.slice(0, 12)}...{addr.slice(-10)}</div>
             <button
               className="p-2 hover:bg-white/5 rounded-lg transition-all"
               onClick={() => copyAddress(addr, `eth-${index}`)}

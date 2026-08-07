@@ -5,6 +5,7 @@ import { derivePath } from "ed25519-hd-key";
 import { Keypair, Connection, clusterApiUrl, LAMPORTS_PER_SOL, PublicKey } from "@solana/web3.js";
 import nacl from "tweetnacl";
 import { Copy, CheckCheck } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function SolanaWallet({ mnemonic }) {
   const [indexes, setIndexes] = useState([0]);
@@ -51,28 +52,27 @@ export function SolanaWallet({ mnemonic }) {
     <div className="chain-wallet-section">
       <div className="chain-header">
         <div className="chain-title">
-          <span className="orbit-badge">SOL</span>
-          Solana
+          <span className="bg-primary/20 text-primary text-[10px] px-2 py-1 rounded font-bold uppercase tracking-widest">SOL</span>
         </div>
-        <button className="btn-orbit py-2 px-4 text-xs" onClick={addWallet}>
+        <Button size="sm" onClick={addWallet}>
           + Create
-        </button>
+        </Button>
       </div>
 
       {publicKeys.length === 0 && (
         <p className="no-wallets-hint">No Solana wallets generated yet.</p>
       )}
 
-      <div className="wallet-list-orbit">
+      <div className="wallet-list">
         {publicKeys.map((key, idx) => (
-            <div key={idx} className="wallet-item-orbit group">
+            <div key={idx} className="p-4 border border-white/5 rounded-xl flex flex-col gap-3 bg-secondary/20 hover:bg-white/5 transition-all group">
               <div className="flex flex-col gap-1">
                 <span className="text-[10px] font-bold text-dim uppercase tracking-widest">Account {idx}</span>
                 <span className="font-mono text-sm opacity-60 group-hover:opacity-100 transition-opacity">
                   {key.slice(0, 8)}...{key.slice(-8)}
                 </span>
                 <div className="flex items-center gap-2 mt-2">
-                    <span className="orbit-badge bg-green-500/10 text-green-400">
+                    <span className="bg-green-500/10 text-green-400 text-[10px] px-2 py-1 rounded font-bold uppercase tracking-widest">
                         {balances[key] !== undefined ? balances[key].toFixed(4) : '...'} SOL
                     </span>
                     <span className="text-[10px] font-bold text-white/20 uppercase tracking-tighter">On Devnet</span>

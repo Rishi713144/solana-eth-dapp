@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Shield, EyeOff, Eye, ChevronRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
 
 export const MnemonicScreen = ({ mnemonic, onComplete }) => {
   const [revealed, setRevealed] = useState(false);
@@ -23,8 +25,9 @@ export const MnemonicScreen = ({ mnemonic, onComplete }) => {
            </div>
         </div>
 
-        <div className="card-orbit glass-orbit p-10 max-w-none">
-          <div 
+        <Card className="p-10 max-w-none bg-background/50 backdrop-blur-xl border-white/10">
+          <CardContent className="p-0">
+            <div 
             className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12"
             style={{ transition: 'all 0.5s' }}
           >
@@ -37,14 +40,15 @@ export const MnemonicScreen = ({ mnemonic, onComplete }) => {
           </div>
 
           <div className="flex flex-col gap-6">
-            <button className="btn-orbit w-full py-6 flex items-center justify-center gap-3 text-xl" onClick={onComplete}>
-              Vault Locked <ChevronRight size={24} />
-            </button>
-            <button className="text-sm font-bold uppercase tracking-widest text-primary hover:opacity-80 transition-all" onClick={() => setRevealed(!revealed)}>
+            <Button size="lg" className="w-full py-6 flex items-center justify-center gap-3 text-xl font-bold h-14" onClick={onComplete}>
+              Wallet Locked <ChevronRight size={24} />
+            </Button>
+            <Button variant="ghost" className="text-sm font-bold uppercase tracking-widest text-primary hover:text-primary hover:bg-primary/10 transition-all" onClick={() => setRevealed(!revealed)}>
               {revealed ? 'Hide Gatekey' : 'Reveal Gatekey'}
-            </button>
+            </Button>
           </div>
-        </div>
+          </CardContent>
+        </Card>
       </motion.div>
     </div>
   );

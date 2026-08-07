@@ -32,14 +32,7 @@ export default function App() {
   };
 
   return (
-    <div className="app-container">
-      {}
-      <div className="bg-noise" />
-      <div className="orbit-bg">
-        <div className="orbit-blob orbit-blob-1" />
-        <div className="orbit-blob orbit-blob-2" />
-      </div>
-      
+    <div className="min-h-screen bg-background text-foreground font-sans antialiased selection:bg-primary/30">
       {step !== 'wallet' && <Navbar onReset={resetFlow} />}
       
       <AnimatePresence mode="wait">

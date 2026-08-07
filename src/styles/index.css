@@ -1,28 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
-:root {
-  --font-main: 'Plus Jakarta Sans', system-ui, sans-serif;
-  
-  
-  --bg-dark: #0f172a; 
-  --bg-darker: #020617; 
-  --bg-card: rgba(255, 255, 255, 0.05);
-  
-  --primary: #d4ff3f; 
-  --primary-glow: rgba(212, 255, 63, 0.15);
-  
-  --text-main: #f8fafc; 
-  --text-dim: #94a3b8; 
-  --text-muted: #64748b; 
-  
-  --border: rgba(255, 255, 255, 0.08);
-  --border-active: rgba(255, 255, 255, 0.2);
-  
-  --radius-orbit: 24px;
-  --radius-md: 16px;
-  --radius-sm: 12px;
-  
-  --shadow-orbit: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 70 100% 60%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
 
 * {
@@ -43,15 +56,15 @@ body {
 
 
 
-.glass-orbit {
+.glass-panel {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border);
-  box-shadow: var(--shadow-orbit);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.btn-orbit {
+.btn-primary {
   background: var(--primary);
   color: #000;
   font-weight: 800;
@@ -67,13 +80,13 @@ body {
   gap: 10px;
 }
 
-.btn-orbit:hover {
+.btn-primary:hover {
   transform: translateY(-2px);
   filter: brightness(1.1);
   box-shadow: 0 10px 20px -5px var(--primary-glow);
 }
 
-.btn-orbit-secondary {
+.btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
   font-weight: 700;
@@ -85,7 +98,7 @@ body {
   font-size: 16px;
 }
 
-.btn-orbit-secondary:hover {
+.btn-secondary:hover {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
 }
