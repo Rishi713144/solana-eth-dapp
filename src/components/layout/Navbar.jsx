@@ -1,17 +1,20 @@
-import React from 'react';
-import logo from '../../assets/logo.svg';
+import { LockKeyhole, ShieldCheck } from 'lucide-react';
+import { Brand } from './Brand';
 
 export const Navbar = ({ onReset }) => (
-  <nav className="w-full bg-background/80 backdrop-blur-md border-b border-white/5 py-4 px-6 sticky top-0 z-50">
-    <div className="max-w-7xl mx-auto flex items-center justify-between">
-      <div className="flex items-center gap-3 cursor-pointer" onClick={onReset}>
-        <div className="w-8 h-8 rounded-full overflow-hidden bg-primary/20 p-1.5">
-           <img src={logo} alt="SikkaOne" className="w-full h-full object-cover" />
-        </div>
-        <span className="font-bold text-lg tracking-tight">SikkaOne</span>
+  <header className="fixed inset-x-0 top-0 z-40 border-b border-white/[0.06] bg-background/70 backdrop-blur-2xl">
+    <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
+      <Brand onClick={onReset} subtitle="Your keys. Every chain." />
+      <div className="flex items-center gap-2">
+        <span className="hidden items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400 sm:flex">
+          <ShieldCheck size={12} className="text-emerald-400" />
+          Local vault
+        </span>
+        <span className="flex items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400">
+          <LockKeyhole size={12} className="text-violet-300" />
+          AES-256
+        </span>
       </div>
     </div>
-  </nav>
+  </header>
 );
-
-

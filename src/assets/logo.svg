@@ -1,15 +1,11 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Small dot for 'Orbit' effect -->
-  <circle cx="32" cy="8" r="3" fill="#d4ff3f">
-    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" />
-  </circle>
-  
-  <!-- Stylized 'S' for SikkaOne -->
-  <path d="M28 14C28 14 28 10 20 10C12 10 11 16 20 16C29 16 28 22 20 22C12 22 12 30 20 30C28 30 28 26 28 26" 
-        stroke="#d4ff3f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        
-  <!-- Outer Dotted Ring -->
-  <circle cx="20" cy="20" r="18" stroke="#d4ff3f" stroke-width="2" stroke-dasharray="2 6" opacity="0.4">
-    <animateTransform attributeName="transform" type="rotate" from="0 20 20" to="360 20 20" dur="20s" repeatCount="indefinite" />
-  </circle>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vela-mark" x1="8" y1="8" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="14" fill="#0B1020"/>
+  <path d="M13 15.5L21.4 34C21.9 35.1 23.4 35.1 23.9 34L34.7 15.5" stroke="url(#vela-mark)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="36" cy="12.5" r="2.7" fill="#67E8F9"/>
 </svg>
