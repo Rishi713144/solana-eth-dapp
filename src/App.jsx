@@ -186,7 +186,7 @@ function AppContent() {
 
   return (
     <div className="relative min-h-screen bg-background font-sans text-foreground antialiased">
-      {step !== 'wallet' && <Navbar onReset={step === 'setup' ? undefined : resetWallet} />}
+      {step !== 'wallet' && step !== 'setup' && <Navbar onReset={resetWallet} />}
 
       <AnimatePresence mode="wait">
         {step === 'setup' && (

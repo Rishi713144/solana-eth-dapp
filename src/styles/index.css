@@ -73,6 +73,11 @@
 }
 
 @layer utilities {
+
+  .max-w-7xl {
+    max-width: 1536px;
+  }
+
   .glass {
     background: linear-gradient(160deg, rgba(255, 255, 255, 0.055) 0%, rgba(12, 16, 30, 0.66) 100%);
     backdrop-filter: blur(20px);
