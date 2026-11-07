@@ -179,7 +179,7 @@ function DashboardContent({ mnemonic, onLock, onReset }) {
 
         <div className="mt-auto space-y-3">
           <VaultCard account={primary?.address} networkLabel={config.shortName} onLock={onLock} />
-          <p className="px-1 text-center text-[9px] text-slate-700">Vela v1.0.0 · Non-custodial</p>
+          <p className="px-1 text-center text-[9px] text-slate-700">v1.0.0 · Non-custodial</p>
         </div>
       </aside>
 

@@ -89,7 +89,7 @@ export function RecoveryModal({ open, onClose, mnemonic }) {
           <div className="flex items-start gap-2.5 rounded-xl border border-amber-400/20 bg-amber-400/[0.05] p-3">
             <AlertTriangle size={14} className="mt-0.5 shrink-0 text-amber-300" />
             <p className="text-[11px] leading-relaxed text-amber-200/70">
-              Never share this phrase. Vela support will never ask for it. Store it offline.
+              Never share this phrase. Support will never ask for it. Store it offline.
             </p>
           </div>
 

@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 import { readJson, writeJson, randomId } from '@/lib/rpc';
 
-const STORAGE_KEY = 'vela_address_book';
+const STORAGE_KEY = 'wallet_address_book';
 
 export function useAddressBook() {
   const [contacts, setContacts] = useState(() => {

@@ -1,6 +1,6 @@
 import { clusterApiUrl } from '@solana/web3.js';
 
-const NETWORK_KEY = 'vela_network';
+const NETWORK_KEY = 'wallet_network';
 const LEGACY_NETWORK_KEY = 'sikka_network';
 
 export const NETWORKS = {

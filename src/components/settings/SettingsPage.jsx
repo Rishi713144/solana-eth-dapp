@@ -37,7 +37,7 @@ export function SettingsPage({ mnemonic, wallet, onLock, onReset }) {
   function updateAutoLock(minutes) {
     const next = setAutoLockMinutes(minutes);
     setAutoLockState(next);
-    toast({ title: 'Auto-lock updated', description: `Vela will lock after ${next} minutes of inactivity.`, variant: 'success' });
+    toast({ title: 'Auto-lock updated', description: `The wallet will lock after ${next} minutes of inactivity.`, variant: 'success' });
   }
 
   function changeNetwork(option) {
@@ -223,7 +223,7 @@ export function SettingsPage({ mnemonic, wallet, onLock, onReset }) {
       <Card className="rounded-3xl border-white/[0.07] bg-card/60">
         <CardContent className="flex flex-col items-start justify-between gap-3 p-5 sm:flex-row sm:items-center">
           <div>
-            <p className="text-xs font-semibold text-white">Vela Wallet <span className="ml-1 text-slate-500">v1.0.0</span></p>
+            <p className="text-xs font-semibold text-white">Local wallet <span className="ml-1 text-slate-500">v1.0.0</span></p>
             <p className="mt-0.5 text-[11px] text-slate-500">Self-custodial multichain wallet for Solana and Ethereum.</p>
           </div>
           <Badge tone="primary" dot>Encrypted local vault</Badge>

@@ -5,8 +5,8 @@ import { useNetwork } from '@/components/providers/NetworkProvider';
 import { deriveEthAccounts, deriveSolanaAccounts } from '@/utils/internalWallet';
 import { withTimeout } from '@/lib/rpc';
 
-const SOL_COUNT_KEY = 'vela_sol_accounts';
-const ETH_COUNT_KEY = 'vela_eth_accounts';
+const SOL_COUNT_KEY = 'wallet_sol_accounts';
+const ETH_COUNT_KEY = 'wallet_eth_accounts';
 const MAX_ACCOUNTS = 10;
 
 function readCount(key, fallback = 1) {

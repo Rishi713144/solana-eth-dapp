@@ -1,5 +1,5 @@
 {
-  "name": "vela-wallet",
+  "name": "local-wallet",
   "private": true,
   "license": "MIT",
   "version": "1.0.0",

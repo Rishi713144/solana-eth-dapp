@@ -1,4 +1,4 @@
-const VAULT_KEY = 'vela_vault_v2';
+const VAULT_KEY = 'wallet_vault_v2';
 const LEGACY_ENCRYPTED_KEY = 'sikka_mnemonic_enc';
 const LEGACY_PLAIN_KEY = 'sikka_mnemonic';
 const SALT_LEN = 16;

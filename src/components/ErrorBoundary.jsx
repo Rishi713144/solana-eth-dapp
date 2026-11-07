@@ -13,7 +13,7 @@ export class ErrorBoundary extends Component {
   }
 
   componentDidCatch(error, info) {
-    console.error('Vela crashed:', error, info);
+    console.error('Wallet application crashed:', error, info);
   }
 
   render() {
@@ -26,11 +26,11 @@ export class ErrorBoundary extends Component {
             </div>
             <h1 className="font-display text-2xl font-semibold text-white">Something went wrong</h1>
             <p className="mt-2 text-sm leading-relaxed text-slate-400">
-              Vela hit an unexpected error. Your encrypted vault remains stored on this device.
+              The wallet hit an unexpected error. Your encrypted vault remains stored on this device.
             </p>
             <Button className="mt-6 w-full" onClick={() => window.location.reload()}>
               <RefreshCw size={16} />
-              Reload Vela
+              Reload wallet
             </Button>
           </div>
         </div>

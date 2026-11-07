@@ -300,7 +300,7 @@ export function Overview({ wallet, prices = {}, pricesLoading = false, networkSt
                 <div>
                   <p className="font-display text-base font-semibold text-white">Your vault is empty</p>
                   <p className="mt-0.5 max-w-md text-xs leading-relaxed text-slate-400">
-                    Receive funds, request devnet SOL from the faucet, or deploy your first Token-2022 asset to explore Vela.
+                    Receive funds or request devnet SOL from the faucet to explore the wallet.
                   </p>
                 </div>
               </div>

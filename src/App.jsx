@@ -30,12 +30,12 @@ import {
 } from './utils/sessionLock';
 
 const STORAGE_KEYS_TO_WIPE = [
-  'vela_sol_accounts',
-  'vela_eth_accounts',
-  'vela_address_book',
-  'vela_prices_v1',
-  'vela_session_lock',
-  'vela_autolock_minutes',
+  'wallet_sol_accounts',
+  'wallet_eth_accounts',
+  'wallet_address_book',
+  'wallet_prices_v1',
+  'wallet_session_lock',
+  'wallet_autolock_minutes',
   'sikka_session_lock',
   'sikka_mnemonic',
   'sikka_mnemonic_enc',
@@ -141,7 +141,7 @@ function AppContent() {
     setVaultCreatedAt(getVaultCreatedAt());
     setSessionActive();
     setStep('wallet');
-    toast({ title: 'Vault unlocked', description: 'Welcome back to Vela.', variant: 'success' });
+    toast({ title: 'Vault unlocked', description: 'Welcome back to your wallet.', variant: 'success' });
     return true;
   }, [toast]);
 

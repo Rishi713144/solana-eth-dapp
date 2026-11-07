@@ -1,5 +1,5 @@
-const LOCK_KEY = 'vela_session_lock';
-const TIMEOUT_KEY = 'vela_autolock_minutes';
+const LOCK_KEY = 'wallet_session_lock';
+const TIMEOUT_KEY = 'wallet_autolock_minutes';
 const DEFAULT_TIMEOUT_MINUTES = 15;
 
 export const AUTO_LOCK_OPTIONS = [5, 15, 30, 60];

@@ -22,7 +22,7 @@ export function MnemonicScreen({ mnemonic, onComplete, onBack }) {
   function downloadBackup() {
     try {
       const header = [
-        'VELA WALLET RECOVERY PHRASE',
+        'WALLET RECOVERY PHRASE',
         'Keep this file offline and private.',
         'Anyone with these words controls your wallet.',
         '',
@@ -31,7 +31,7 @@ export function MnemonicScreen({ mnemonic, onComplete, onBack }) {
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = `vela-recovery-${new Date().toISOString().slice(0, 10)}.txt`;
+      link.download = `wallet-recovery-${new Date().toISOString().slice(0, 10)}.txt`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -73,7 +73,7 @@ export function MnemonicScreen({ mnemonic, onComplete, onBack }) {
           <div className="flex items-start gap-3 border-b border-amber-400/10 bg-amber-400/[0.05] px-5 py-3.5 sm:px-6">
             <AlertTriangle size={16} className="mt-0.5 shrink-0 text-amber-300" />
             <p className="text-xs leading-relaxed text-amber-200/75">
-              Never share this phrase. Vela support will never ask for it. Anyone who has it can drain your accounts.
+              Never share this phrase. Support will never ask for it. Anyone who has it can drain your accounts.
             </p>
           </div>
 

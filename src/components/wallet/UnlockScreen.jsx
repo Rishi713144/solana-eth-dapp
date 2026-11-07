@@ -50,7 +50,7 @@ export function UnlockScreen({ onUnlock, onReset, createdLabel }) {
             <LockKeyhole size={28} />
           </div>
           <h1 className="font-display text-3xl font-semibold tracking-tight text-white">Welcome back</h1>
-          <p className="mt-2 text-sm text-slate-400">Unlock your encrypted Vela vault to continue.</p>
+          <p className="mt-2 text-sm text-slate-400">Unlock your encrypted vault to continue.</p>
         </div>
 
         <Card className="rounded-3xl border-white/10 bg-[#0a0f1e]/85 p-6 shadow-[0_50px_140px_-60px_rgba(124,92,255,0.65)] sm:p-7">

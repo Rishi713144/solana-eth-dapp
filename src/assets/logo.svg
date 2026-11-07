@@ -1,11 +1,11 @@
 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="vela-mark" x1="8" y1="8" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+    <linearGradient id="wallet-mark" x1="8" y1="8" x2="42" y2="42" gradientUnits="userSpaceOnUse">
       <stop stop-color="#A78BFA"/>
       <stop offset="1" stop-color="#22D3EE"/>
     </linearGradient>
   </defs>
   <rect width="48" height="48" rx="14" fill="#0B1020"/>
-  <path d="M13 15.5L21.4 34C21.9 35.1 23.4 35.1 23.9 34L34.7 15.5" stroke="url(#vela-mark)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 15.5L21.4 34C21.9 35.1 23.4 35.1 23.9 34L34.7 15.5" stroke="url(#wallet-mark)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="36" cy="12.5" r="2.7" fill="#67E8F9"/>
 </svg>

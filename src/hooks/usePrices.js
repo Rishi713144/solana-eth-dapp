@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { readJson, writeJson } from '@/lib/rpc';
 
-const CACHE_KEY = 'vela_prices_v1';
+const CACHE_KEY = 'wallet_prices_v1';
 const REFRESH_MS = 120000;
 
 function normalizePrices(value) {

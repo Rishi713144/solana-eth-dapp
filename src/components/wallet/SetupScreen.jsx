@@ -238,7 +238,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Sub-second 400ms finality with ultra-low sub-cent fees.
+                                  Use Solana Devnet/Testnet for test balances and transfers.
                                 </p>
                               </div>
                               <div
@@ -253,7 +253,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Native USDC, USDT & token balances auto-tracked.
+                                  View supported SPL token balances for your primary account.
                                 </p>
                               </div>
                             </div>
@@ -278,7 +278,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  EVM smart contract sandbox with live gas estimation.
+                                  Use Sepolia for test ETH balances and transfers.
                                 </p>
                               </div>
                               <div
@@ -293,7 +293,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Standard EVM tokens with zero manual contract setup.
+                                  Keep Solana and Ethereum accounts in one encrypted vault.
                                 </p>
                               </div>
                             </div>
@@ -302,39 +302,39 @@ export function SetupScreen({
 
                         {/* Bottom Left Note */}
                         <div className="mt-3 border-t border-slate-100 pt-2.5 flex items-center justify-between text-[11px] text-slate-500">
-                          <span>Custom RPC endpoints supported on all accounts.</span>
-                          <span className="font-semibold text-emerald-600">Devnet & Sepolia Ready</span>
+                          <span>Configured endpoints for supported test networks.</span>
+                          <span className="font-semibold text-emerald-600">Devnet & Sepolia</span>
                         </div>
                       </div>
 
-                      {/* Right Brand & Open Account CTA Card */}
+                      {/* Right Brand & Create Wallet CTA Card */}
                       <div className="md:col-span-5 relative flex flex-col justify-between rounded-lg bg-[#0e121e] p-4 text-white border border-white/10 shadow-inner overflow-hidden">
                         <div className="pointer-events-none absolute -right-6 -top-6 h-28 w-28 rounded-full bg-blue-500/20 blur-2xl" />
                         <div className="relative z-10 space-y-2">
                           <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-semibold text-blue-300">
                             <Sparkles size={11} className="text-blue-400" />
-                            <span>MULTI-CHAIN ENGINE</span>
+                            <span>LOCAL MULTI-CHAIN WALLET</span>
                           </div>
                           <div>
                             <h4 className="font-display text-sm font-bold tracking-tight text-white">
-                              Dual-Chain Sovereignty
+                              Dual-chain wallet
                             </h4>
                             <p className="mt-1 text-[11px] leading-relaxed text-slate-400">
-                              Manage high-speed Solana transactions and Ethereum EVM smart contracts side-by-side with zero friction.
+                              View balances and manage Solana and Ethereum testnet accounts from one local wallet.
                             </p>
                           </div>
                           <div className="space-y-1.5 pt-1 text-[11px] text-slate-300">
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>Sub-second 400ms finality</span>
+                              <span>Solana and Ethereum test networks</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>Zero markup on EVM gas</span>
+                              <span>Send and receive supported assets</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>Unified 12-word seed phrase</span>
+                              <span>One recovery phrase for both chains</span>
                             </div>
                           </div>
                         </div>
@@ -348,7 +348,7 @@ export function SetupScreen({
                             }}
                             className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-[#0052ff] hover:bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white shadow-md transition-all hover:scale-[1.01] active:scale-[0.99]"
                           >
-                            <span>Open account</span>
+                            <span>Create wallet</span>
                             <ArrowUpRight size={13} />
                           </button>
                           <button
@@ -408,7 +408,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Add unlimited sub-wallets with instant derivation index switching.
+                                  Add up to 10 derived accounts per chain from your recovery phrase.
                                 </p>
                               </div>
                             </div>
@@ -462,7 +462,7 @@ export function SetupScreen({
                         </div>
                       </div>
 
-                      {/* Right Brand & Open Account CTA Card */}
+                      {/* Right Brand & Create Wallet CTA Card */}
                       <div className="md:col-span-5 relative flex flex-col justify-between rounded-lg bg-[#0e121e] p-4 text-white border border-white/10 shadow-inner overflow-hidden">
                         <div className="pointer-events-none absolute -right-6 -top-6 h-28 w-28 rounded-full bg-blue-500/20 blur-2xl" />
                         <div className="relative z-10 space-y-2">
@@ -489,7 +489,7 @@ export function SetupScreen({
                             </div>
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>Instant cross-chain readiness</span>
+                              <span>Ready for testnet development</span>
                             </div>
                           </div>
                         </div>
@@ -503,7 +503,7 @@ export function SetupScreen({
                             }}
                             className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-[#0052ff] hover:bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white shadow-md transition-all hover:scale-[1.01] active:scale-[0.99]"
                           >
-                            <span>Open account</span>
+                            <span>Create wallet</span>
                             <ArrowUpRight size={13} />
                           </button>
                           <button
@@ -548,7 +548,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Encrypted in-browser with 100,000 PBKDF2 iterations.
+                                  Encrypted in-browser with your vault password.
                                 </p>
                               </div>
                               <div
@@ -612,35 +612,35 @@ export function SetupScreen({
 
                         {/* Bottom Left Note */}
                         <div className="mt-3 border-t border-slate-100 pt-2.5 flex items-center justify-between text-[11px] text-slate-500">
-                          <span>Audited client-side cryptography • No cookies or trackers</span>
-                          <span className="font-semibold text-emerald-600">Client-Side Encrypted</span>
+                          <span>Local encryption • No backend custody of your keys</span>
+                          <span className="font-semibold text-emerald-600">Encrypted locally</span>
                         </div>
                       </div>
 
-                      {/* Right Brand & Open Account CTA Card */}
+                      {/* Right Brand & Create Wallet CTA Card */}
                       <div className="md:col-span-5 relative flex flex-col justify-between rounded-lg bg-[#0e121e] p-4 text-white border border-white/10 shadow-inner overflow-hidden">
                         <div className="pointer-events-none absolute -right-6 -top-6 h-28 w-28 rounded-full bg-blue-500/20 blur-2xl" />
                         <div className="relative z-10 space-y-2">
                           <div className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-2.5 py-0.5 text-[10px] font-semibold text-blue-300">
                             <Sparkles size={11} className="text-blue-400" />
-                            <span>INSTITUTIONAL SECURITY</span>
+                            <span>LOCAL VAULT SECURITY</span>
                           </div>
                           <div>
                             <h4 className="font-display text-sm font-bold tracking-tight text-white">
-                              Zero Custody. Pure Math.
+                              Your keys stay local
                             </h4>
                             <p className="mt-1 text-[11px] leading-relaxed text-slate-400">
-                              Not your keys, not your coins. Vela ensures you remain the sole custodian of your digital assets.
+                              Your recovery phrase stays under your control while the wallet is encrypted on this device.
                             </p>
                           </div>
                           <div className="space-y-1.5 pt-1 text-[11px] text-slate-300">
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>Military-grade AES-256-GCM cipher</span>
+                              <span>AES-256-GCM encrypted vault</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>100,000 PBKDF2 key derivations</span>
+                              <span>Password-based key stretching</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
@@ -658,7 +658,7 @@ export function SetupScreen({
                             }}
                             className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-[#0052ff] hover:bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white shadow-md transition-all hover:scale-[1.01] active:scale-[0.99]"
                           >
-                            <span>Open account</span>
+                            <span>Create wallet</span>
                             <ArrowUpRight size={13} />
                           </button>
                           <button
@@ -703,7 +703,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Create your dual-chain wallet and claim faucets in 30 seconds.
+                                  Create or import a wallet, then use supported testnet tools.
                                 </p>
                               </div>
                               <div
@@ -739,11 +739,11 @@ export function SetupScreen({
                                 className="group cursor-pointer rounded-lg bg-[#f7f5f0] hover:bg-[#ede9df] p-2.5 transition-colors"
                               >
                                 <h4 className="text-xs font-semibold text-slate-900 group-hover:text-[#0052ff] transition-colors flex items-center justify-between">
-                                  <span>Custom RPC Setup</span>
+                                  <span>Network endpoints</span>
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Configure dedicated RPC nodes and custom network endpoints.
+                                  Review the configured Solana and Ethereum testnet endpoints.
                                 </p>
                               </div>
                               <div
@@ -758,7 +758,7 @@ export function SetupScreen({
                                   <ArrowUpRight size={11} className="opacity-0 group-hover:opacity-100 transition-opacity text-[#0052ff]" />
                                 </h4>
                                 <p className="mt-0.5 text-[11px] text-slate-500 leading-snug">
-                                  Ed25519 & EIP-191 personal_sign offline validation mechanics.
+                                  Sign and verify UTF-8 messages locally with your Solana account.
                                 </p>
                               </div>
                             </div>
@@ -772,7 +772,7 @@ export function SetupScreen({
                         </div>
                       </div>
 
-                      {/* Right Brand & Open Account CTA Card */}
+                      {/* Right Brand & Create Wallet CTA Card */}
                       <div className="md:col-span-5 relative flex flex-col justify-between rounded-lg bg-[#0e121e] p-4 text-white border border-white/10 shadow-inner overflow-hidden">
                         <div className="pointer-events-none absolute -right-6 -top-6 h-28 w-28 rounded-full bg-blue-500/20 blur-2xl" />
                         <div className="relative z-10 space-y-2">
@@ -785,13 +785,13 @@ export function SetupScreen({
                               Build With Confidence
                             </h4>
                             <p className="mt-1 text-[11px] leading-relaxed text-slate-400">
-                              Open architecture with full BIP-39 and BIP-44 compliance for builders and traders.
+                              A transparent local wallet for testing dApps and learning on supported networks.
                             </p>
                           </div>
                           <div className="space-y-1.5 pt-1 text-[11px] text-slate-300">
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>Full BIP-39 / BIP-44 compliance</span>
+                              <span>BIP-39 recovery phrase support</span>
                             </div>
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
@@ -799,7 +799,7 @@ export function SetupScreen({
                             </div>
                             <div className="flex items-center gap-1.5">
                               <CheckCircle2 size={12} className="text-emerald-400 shrink-0" />
-                              <span>No proprietary vendor lock-in</span>
+                              <span>Local account derivation</span>
                             </div>
                           </div>
                         </div>
@@ -813,7 +813,7 @@ export function SetupScreen({
                             }}
                             className="w-full flex items-center justify-center gap-1.5 rounded-lg bg-[#0052ff] hover:bg-blue-600 px-3.5 py-2 text-xs font-semibold text-white shadow-md transition-all hover:scale-[1.01] active:scale-[0.99]"
                           >
-                            <span>Open account</span>
+                            <span>Create wallet</span>
                             <ArrowUpRight size={13} />
                           </button>
                           <button
@@ -839,7 +839,7 @@ export function SetupScreen({
           <div className="flex items-center gap-2.5">
             <div className="hidden items-center gap-1.5 rounded-full border border-slate-200/90 bg-white/90 px-3.5 py-1.5 text-xs font-medium text-slate-700 shadow-sm sm:flex">
               <Globe size={13} className="text-[#0052ff]" />
-              <span>Devnet / Sepolia</span>
+              <span>Solana Devnet / Ethereum Sepolia</span>
             </div>
 
             <button
@@ -862,7 +862,7 @@ export function SetupScreen({
             {/* Social Proof Pill Badge */}
             <div className="inline-flex items-center gap-2.5 rounded-full border border-slate-200/90 bg-white px-3.5 py-1.5 shadow-sm">
               <span className="text-xs font-medium text-slate-700 whitespace-nowrap">
-                <span className="mr-1 text-rose-500">❤️</span> Loved by 100K+ people worldwide
+                <span className="mr-1 text-blue-500">◆</span> Built for testnet development
               </span>
               <div className="flex -space-x-2 shrink-0 items-center">
                 <img src={IMAGES.avatar1} alt="User" className="h-5 w-5 shrink-0 rounded-full border-2 border-white object-cover" />
@@ -880,7 +880,7 @@ export function SetupScreen({
                 </span>
               </h1>
               <p className="mx-auto mt-1.5 max-w-lg text-xs sm:text-sm leading-relaxed text-slate-600">
-                Manage your crypto, pay with card, and earn yield — without the complexity.
+                Create, encrypt, and use Solana and Ethereum testnet accounts from one local wallet.
               </p>
             </div>
 
@@ -891,14 +891,14 @@ export function SetupScreen({
                 onClick={onCreateWallet}
                 className="rounded-full bg-[#0052ff] hover:bg-blue-600 px-6 py-2.5 text-xs sm:text-sm font-semibold text-white shadow-[0_6px_20px_rgba(0,82,255,0.35)] transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                Open account
+                Create wallet
               </button>
               <button
                 type="button"
                 onClick={() => setImportOpen(true)}
                 className="rounded-full border border-slate-200/90 bg-white hover:bg-slate-50 px-6 py-2.5 text-xs sm:text-sm font-semibold text-slate-900 shadow-sm transition-all hover:scale-[1.02] active:scale-[0.98]"
               >
-                Learn more
+                Import an existing wallet
               </button>
             </div>
 
@@ -928,16 +928,16 @@ export function SetupScreen({
 
             <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-end gap-3.5 sm:gap-4 lg:gap-5 w-full">
             {/* ---------------------------------------------------- */}
-            {/* COLUMN 1: "No hidden fees" card + Woman photo        */}
+            {/* COLUMN 1: "Local wallet access" card + Woman photo   */}
             {/* ---------------------------------------------------- */}
             <div className="flex flex-col gap-3">
-              {/* Top Mini Card: No hidden fees */}
+              {/* Top Mini Card: Local wallet access */}
               <div className="relative flex h-[76px] sm:h-[84px] flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-3.5 sm:p-4 shadow-sm">
                 <div>
                   <h3 className="font-display text-sm font-bold tracking-tight text-slate-900">
-                    No hidden fees
+                    Local wallet access
                   </h3>
-                  <p className="text-[11px] font-semibold text-emerald-600 mt-0.5">+0% protocol markup</p>
+                  <p className="text-[11px] font-semibold text-emerald-600 mt-0.5">No custodial account fees</p>
                 </div>
                 {/* 3D Metallic Sphere Coin hovering */}
                 <div className="absolute -bottom-1 -right-1">
@@ -949,21 +949,21 @@ export function SetupScreen({
               <div className="relative h-[175px] sm:h-[195px] lg:h-[215px] overflow-hidden rounded-2xl sm:rounded-3xl shadow-md border border-slate-200/60">
                 <img
                   src={IMAGES.womanWithCard}
-                  alt="Vela user"
+                  alt="Wallet user"
                   className="h-full w-full object-cover"
                 />
               </div>
             </div>
 
             {/* ---------------------------------------------------- */}
-            {/* COLUMN 2: Tall Dark Card: "Buy, Sell & Swap"         */}
+            {/* COLUMN 2: Tall Dark Card: "Testnet tools"             */}
             {/* ---------------------------------------------------- */}
             <div className="relative flex h-[260px] sm:h-[290px] lg:h-[310px] flex-col justify-between overflow-hidden rounded-2xl sm:rounded-3xl border border-white/10 bg-[#101421] p-5 text-white shadow-xl">
               <div>
                 <h3 className="font-display text-base sm:text-lg font-bold tracking-tight text-white">
-                  Buy, Sell & Swap
+                  Testnet tools
                 </h3>
-                <p className="mt-0.5 text-xs text-slate-400">Instant multi-chain liquidity</p>
+                <p className="mt-0.5 text-xs text-slate-400">Fund, sign, and manage test accounts</p>
 
                 {/* Token Badges Row */}
                 <div className="mt-3.5 flex items-center gap-1.5">
@@ -1002,7 +1002,7 @@ export function SetupScreen({
             </div>
 
             {/* ---------------------------------------------------- */}
-            {/* COLUMN 4: "24/7 protection" + "Send money in seconds"*/}
+            {/* COLUMN 4: "Local vault security" + "Send testnet assets" */}
             {/* ---------------------------------------------------- */}
             <div className="relative flex flex-col gap-3">
               {/* Floating 3D metallic coin hovering top-right */}
@@ -1010,11 +1010,11 @@ export function SetupScreen({
                 <ChromeCoin3D symbol="ETH" className="h-11 w-11" />
               </div>
 
-              {/* Top Mini Card: 24/7 protection */}
+              {/* Top Mini Card: Local vault security */}
               <div className="relative flex h-[76px] sm:h-[84px] flex-col justify-between overflow-hidden rounded-2xl border border-slate-200/80 bg-white p-3.5 sm:p-4 shadow-sm">
                 <div>
                   <h3 className="font-display text-sm font-bold tracking-tight text-slate-900">
-                    24/7 protection
+                    Local vault security
                   </h3>
                   <p className="mt-0.5 text-[11px] text-slate-500">Sealed with AES-256-GCM</p>
                 </div>
@@ -1023,19 +1023,19 @@ export function SetupScreen({
                 </div>
               </div>
 
-              {/* Bottom Card: Send money in seconds (Solid Vibrant Blue) */}
+              {/* Bottom Card: Send testnet assets (Solid Vibrant Blue) */}
               <div className="relative flex h-[175px] sm:h-[195px] lg:h-[215px] flex-col justify-between overflow-hidden rounded-2xl sm:rounded-3xl bg-[#0052ff] p-4 sm:p-5 text-white shadow-xl">
                 <div>
                   <h3 className="font-display text-base font-bold tracking-tight text-white">
-                    Send money in seconds
+                    Send testnet assets
                   </h3>
-                  <p className="mt-0.5 text-xs text-blue-100">Zero-lag cross-chain settlement</p>
+                  <p className="mt-0.5 text-xs text-blue-100">Transfer supported assets on their own network</p>
                 </div>
 
                 {/* Sub-label info */}
                 <div className="flex items-center justify-between border-t border-white/20 pt-2 text-[10px] text-blue-100">
-                  <span>Cross-chain verified</span>
-                  <span className="font-semibold text-white">Instant</span>
+                  <span>Network-specific transfers</span>
+                  <span className="font-semibold text-white">Testnet only</span>
                 </div>
               </div>
             </div>
@@ -1083,7 +1083,7 @@ export function SetupScreen({
 
           <div className="flex items-start gap-2.5 rounded-xl border border-white/10 bg-white/[0.02] p-3 text-xs text-slate-400">
             <KeyRound size={15} className="mt-0.5 shrink-0 text-blue-400" />
-            <span>Vela derives accounts locally. Your seed never leaves your device.</span>
+            <span>This wallet derives accounts locally. Your seed never leaves your device.</span>
           </div>
 
           <div className="flex gap-3 pt-2">
@@ -1118,14 +1118,14 @@ export function SetupScreen({
         onClose={() => setInfoModal(null)}
         title={
           infoModal === 'features'
-            ? 'Vela Vault Features'
+            ? 'Wallet Features'
             : infoModal === 'networks'
               ? 'Supported Networks'
               : infoModal === 'security'
                 ? 'Security Architecture'
                 : 'Documentation & Guides'
         }
-        description="Everything you need to know about your self-custodial multichain wallet."
+        description="Learn how the wallet creates, protects, and operates your local Solana and Ethereum testnet accounts."
       >
         <div className="space-y-3.5 text-sm text-slate-300">
           {infoModal === 'features' && (
@@ -1148,12 +1148,12 @@ export function SetupScreen({
           {infoModal === 'networks' && (
             <>
               <div className="rounded-xl border border-white/10 bg-white/5 p-3.5">
-                <p className="font-semibold text-cyan-400">Solana Devnet & Mainnet</p>
-                <p className="mt-1 text-xs text-slate-400">High speed, sub-cent fees, native SPL tokens, and wallet-adapter support.</p>
+                <p className="font-semibold text-cyan-400">Solana Devnet & Testnet</p>
+                <p className="mt-1 text-xs text-slate-400">Use Solana test networks for balances, transfers, activity, and faucet requests.</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/5 p-3.5">
-                <p className="font-semibold text-indigo-400">Ethereum Sepolia & Mainnet</p>
-                <p className="mt-1 text-xs text-slate-400">Full EVM support via Ethers.js, ERC-20 standard balances, and gas estimation.</p>
+                <p className="font-semibold text-indigo-400">Ethereum Sepolia</p>
+                <p className="mt-1 text-xs text-slate-400">Use the configured Sepolia endpoint for test ETH balances and transfers.</p>
               </div>
             </>
           )}
@@ -1162,19 +1162,19 @@ export function SetupScreen({
             <>
               <div className="rounded-xl border border-white/10 bg-white/5 p-3.5">
                 <p className="font-semibold text-emerald-400">AES-256-GCM Vault</p>
-                <p className="mt-1 text-xs text-slate-400">Your mnemonic is encrypted with 100,000 PBKDF2 iterations and stored strictly in browser localStorage.</p>
+                <p className="mt-1 text-xs text-slate-400">Your recovery phrase is encrypted in the browser and protected by your vault password.</p>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/5 p-3.5">
-                <p className="font-semibold text-white">Zero Telemetry & Zero Custody</p>
-                <p className="mt-1 text-xs text-slate-400">Vela has no analytics, no backend servers, and no trackers. You hold your own private keys.</p>
+                <p className="font-semibold text-white">Local key custody</p>
+                <p className="mt-1 text-xs text-slate-400">The wallet derives accounts locally; never share your recovery phrase or private keys.</p>
               </div>
             </>
           )}
 
           {infoModal === 'docs' && (
             <div className="space-y-2 text-xs text-slate-400">
-              <p>This is experimental software for Devnet, Testnet, and Sepolia development.</p>
-              <p>To begin, click &ldquo;Open account&rdquo; to generate a 12-word mnemonic, write it down safely, and set an unlock password.</p>
+              <p>This is experimental software for Solana Devnet/Testnet and Ethereum Sepolia development.</p>
+              <p>To begin, click &ldquo;Create wallet&rdquo; to generate a recovery phrase, store it safely, and set an unlock password.</p>
             </div>
           )}
 
@@ -1186,7 +1186,7 @@ export function SetupScreen({
               onCreateWallet();
             }}
           >
-            Create new wallet now
+            Create wallet now
           </Button>
         </div>
       </Modal>
