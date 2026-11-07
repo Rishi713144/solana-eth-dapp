@@ -1,7 +1,14 @@
 import logo from '@/assets/logo.svg';
 import { cn } from '@/lib/utils';
 
-export function Brand({ compact = false, subtitle = 'Multichain wallet', className, onClick }) {
+export function Brand({
+  compact = false,
+  subtitle = 'Multichain wallet',
+  theme = 'dark',
+  className,
+  titleClassName,
+  onClick,
+}) {
   const Tag = onClick ? 'button' : 'div';
   return (
     <Tag
@@ -11,7 +18,14 @@ export function Brand({ compact = false, subtitle = 'Multichain wallet', classNa
     >
       <img src={logo} alt="Vela" className={cn('shrink-0 rounded-xl shadow-glow', compact ? 'h-8 w-8' : 'h-10 w-10')} />
       <span className="flex min-w-0 flex-col">
-        <span className={cn('font-display font-semibold tracking-tight text-white', compact ? 'text-base' : 'text-lg')}>
+        <span
+          className={cn(
+            'font-display font-semibold tracking-tight',
+            theme === 'light' ? 'text-slate-900' : 'text-white',
+            compact ? 'text-base' : 'text-lg',
+            titleClassName
+          )}
+        >
           Vela
         </span>
         {subtitle && <span className="text-[11px] font-medium text-slate-500">{subtitle}</span>}

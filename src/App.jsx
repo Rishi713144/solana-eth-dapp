@@ -185,7 +185,7 @@ function AppContent() {
   }, [vaultCreatedAt]);
 
   return (
-    <div className="relative min-h-screen bg-background font-sans text-foreground antialiased">
+    <div className={`relative min-h-screen font-sans text-foreground antialiased ${step === 'setup' ? 'bg-[#f7f5f0] lg:h-screen lg:max-h-screen lg:overflow-hidden' : 'bg-background'}`}>
       {step !== 'wallet' && step !== 'setup' && <Navbar onReset={resetWallet} />}
 
       <AnimatePresence mode="wait">
